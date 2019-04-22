@@ -19,6 +19,11 @@ Auth::routes();
 
 
 
-Route::group(['middleware'=>'auth'], function(){
+Route::group(['middleware'=>'auth', 'prefix'=>'admin'], function(){
     Route::get('dashboard', 'AdminController@dashboard');
+    Route::get('info', 'InfoController@info')->name('info');
+    Route::post('info', 'InfoController@store')->name('info');
+    Route::get('profile', 'AdminController@profile')->name('profile');
+    Route::post('profile', 'AdminController@store')->name('profile');
+    Route::resource('page', 'PageController');
 });
