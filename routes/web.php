@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'FrontEndController@index')->name('home');
+Route::get('/events/{event}', 'FrontEndController@singleEvent')->name('event.single');
+Route::get('/news/{news}', 'FrontEndController@singleNews')->name('news.single');
 
 Auth::routes();
 
@@ -26,4 +26,7 @@ Route::group(['middleware'=>'auth', 'prefix'=>'admin'], function(){
     Route::get('profile', 'AdminController@profile')->name('profile');
     Route::post('profile', 'AdminController@store')->name('profile');
     Route::resource('page', 'PageController');
+    Route::resource('slider', 'SliderController');
+    Route::resource('event', 'EventController');
+    Route::resource('news', 'NewsController');
 });

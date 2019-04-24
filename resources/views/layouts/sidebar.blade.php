@@ -48,6 +48,24 @@
                 <li><a class="treeview-item" href="{{route('page.create')}}"><i class="icon fa fa-circle-o"></i> Add New</a></li>
             </ul>
         </li>
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-photo"></i><span class="app-menu__label">Sliders</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+            <ul class="treeview-menu">
+                <li><a class="treeview-item" href="{{route('slider.index')}}"><i class="icon fa fa-circle-o"></i> All Sliders</a></li>
+                <li><a class="treeview-item" href="{{route('slider.create')}}"><i class="icon fa fa-circle-o"></i> Add New</a></li>
+            </ul>
+        </li>
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-calendar"></i><span class="app-menu__label">Events</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+            <ul class="treeview-menu">
+                <li><a class="treeview-item" href="{{route('event.index')}}"><i class="icon fa fa-circle-o"></i> All Events</a></li>
+                <li><a class="treeview-item" href="{{route('event.create')}}"><i class="icon fa fa-circle-o"></i> Add New</a></li>
+            </ul>
+        </li>
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-calendar-times-o"></i><span class="app-menu__label">News</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+            <ul class="treeview-menu">
+                <li><a class="treeview-item" href="{{route('news.index')}}"><i class="icon fa fa-circle-o"></i> All News</a></li>
+                <li><a class="treeview-item" href="{{route('news.create')}}"><i class="icon fa fa-circle-o"></i> Add New</a></li>
+            </ul>
+        </li>
         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-cogs"></i><span class="app-menu__label">Settings</span><i class="treeview-indicator fa fa-angle-right"></i></a>
             <ul class="treeview-menu">
                 <li><a class="treeview-item" href="{{route('info')}}"><i class="icon fa fa-circle-o"></i> Basic info</a></li>
