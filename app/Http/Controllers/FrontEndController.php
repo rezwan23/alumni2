@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Event;
+use App\Models\Partner;
 use App\News;
 use App\Slider;
 use Illuminate\Http\Request;
@@ -15,6 +16,7 @@ class FrontEndController extends Controller
             'sliders'=>Slider::all(),
             'events'    =>  Event::all(),
             'news'  =>  News::all(),
+            'partners'  =>  Partner::all(),
         ]);
     }
     public function singleEvent(Event $event)

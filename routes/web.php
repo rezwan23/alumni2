@@ -29,4 +29,9 @@ Route::group(['middleware'=>'auth', 'prefix'=>'admin'], function(){
     Route::resource('slider', 'SliderController');
     Route::resource('event', 'EventController');
     Route::resource('news', 'NewsController');
+    Route::resource('partner', 'PartnerController');
+    Route::resource('gallery', 'GalleryController');
+    Route::resource('image', 'GalleryImagesController');
+    Route::get('/image/add-to-gallery/{image}', 'GalleryImagesController@addToGallery')->name('gallery.add');
+    Route::post('/image/add-to-gallery/{image}', 'GalleryImagesController@setGallery')->name('set.gallery');
 });

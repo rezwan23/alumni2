@@ -6,6 +6,7 @@
         </div>
     </div>
     <ul class="app-menu">
+        <li><a class="app-menu__item active" href="{{route('home')}}" target="_blank"><i class="app-menu__icon fa fa-anchor"></i><span class="app-menu__label">Visit Site</span></a></li>
         <li><a class="app-menu__item active" href="index.html"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
         {{--<li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">UI Elements</span><i class="treeview-indicator fa fa-angle-right"></i></a>--}}
             {{--<ul class="treeview-menu">--}}
@@ -48,10 +49,28 @@
                 <li><a class="treeview-item" href="{{route('page.create')}}"><i class="icon fa fa-circle-o"></i> Add New</a></li>
             </ul>
         </li>
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-address-book"></i><span class="app-menu__label">Gallery</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+            <ul class="treeview-menu">
+                <li><a class="treeview-item" href="{{route('gallery.index')}}"><i class="icon fa fa-circle-o"></i> All Gallery</a></li>
+                <li><a class="treeview-item" href="{{route('gallery.create')}}"><i class="icon fa fa-circle-o"></i> Add New</a></li>
+            </ul>
+        </li>
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-calendar"></i><span class="app-menu__label">Galllery Images</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+            <ul class="treeview-menu">
+                <li><a class="treeview-item" href="{{route('image.index')}}"><i class="icon fa fa-circle-o"></i> All Images</a></li>
+                <li><a class="treeview-item" href="{{route('image.create')}}"><i class="icon fa fa-circle-o"></i> Add New</a></li>
+            </ul>
+        </li>
         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-photo"></i><span class="app-menu__label">Sliders</span><i class="treeview-indicator fa fa-angle-right"></i></a>
             <ul class="treeview-menu">
                 <li><a class="treeview-item" href="{{route('slider.index')}}"><i class="icon fa fa-circle-o"></i> All Sliders</a></li>
                 <li><a class="treeview-item" href="{{route('slider.create')}}"><i class="icon fa fa-circle-o"></i> Add New</a></li>
+            </ul>
+        </li>
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-photo"></i><span class="app-menu__label">Partners</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+            <ul class="treeview-menu">
+                <li><a class="treeview-item" href="{{route('partner.index')}}"><i class="icon fa fa-circle-o"></i> All Partners</a></li>
+                <li><a class="treeview-item" href="{{route('partner.create')}}"><i class="icon fa fa-circle-o"></i> Add New</a></li>
             </ul>
         </li>
         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-calendar"></i><span class="app-menu__label">Events</span><i class="treeview-indicator fa fa-angle-right"></i></a>
