@@ -14,6 +14,9 @@
 Route::get('/', 'FrontEndController@index')->name('home');
 Route::get('/events/{event}', 'FrontEndController@singleEvent')->name('event.single');
 Route::get('/news/{news}', 'FrontEndController@singleNews')->name('news.single');
+Route::get('/photo/gallery', 'FrontEndController@photoGallery')->name('gallery.photo');
+Route::resource('member', 'MemberController');
+Route::get('showpage/page/{page}', 'FrontEndController@singlePage')->name('single.page');
 
 Auth::routes();
 

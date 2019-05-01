@@ -58,139 +58,56 @@
 
     <!-- Service 1 Area End Here -->
     <!-- About 1 Area Start Here -->
-    <div class="about1-area">
-        <div class="container">
-            <h1 class="about-title wow fadeIn" data-wow-duration="1s" data-wow-delay=".2s">Welcome To Academics</h1>
-            <p class="about-sub-title wow fadeIn" data-wow-duration="1s" data-wow-delay=".2s">Tmply dummy text of the printing and typesetting industry. Lorem Ipsum has been theindustry's standard dummy text ever since the 1500s, when an unknown printer took.</p>
-            <div class="about-img-holder wow fadeIn" data-wow-duration="2s" data-wow-delay=".2s">
-                <img src="/user/img/about/1.jpg" alt="about" class="img-responsive" />
-            </div>
-        </div>
-    </div>
-    <!-- About 1 Area End Here -->
-    <!-- Courses 1 Area Start Here -->
-    <!-- Courses 1 Area End Here -->
-    <!-- Video Area Start Here -->
-    <div class="video-area overlay-video bg-common-style" style="background-image: url('/user/img/banner/1.jpg');">
-        <div class="container">
-            <div class="video-content">
-                <h2 class="video-title">Watch Campus Life Video Tour</h2>
-                <p class="video-sub-title">Vmply dummy text of the printing and typesetting industryorem
-                    <br>Ipsum industry's standard dum an unknowramble.</p>
-                <a class="play-btn popup-youtube wow bounceInUp" data-wow-duration="2s" data-wow-delay=".1s" href="http://www.youtube.com/watch?v=1iIZeIy7TqM"><i class="fa fa-play" aria-hidden="true"></i></a>
-            </div>
-        </div>
-    </div>
+    {{--<div class="about1-area">--}}
+        {{--<div class="container">--}}
+            {{--<h1 class="about-title wow fadeIn" data-wow-duration="1s" data-wow-delay=".2s">Welcome To Academics</h1>--}}
+            {{--<p class="about-sub-title wow fadeIn" data-wow-duration="1s" data-wow-delay=".2s">Tmply dummy text of the printing and typesetting industry. Lorem Ipsum has been theindustry's standard dummy text ever since the 1500s, when an unknown printer took.</p>--}}
+            {{--<div class="about-img-holder wow fadeIn" data-wow-duration="2s" data-wow-delay=".2s">--}}
+                {{--<img src="/user/img/about/1.jpg" alt="about" class="img-responsive" />--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
+    {{--<!-- About 1 Area End Here -->--}}
+    {{--<!-- Courses 1 Area Start Here -->--}}
+    {{--<!-- Courses 1 Area End Here -->--}}
+    {{--<!-- Video Area Start Here -->--}}
+    {{--<div class="video-area overlay-video bg-common-style" style="background-image: url('/user/img/banner/1.jpg');">--}}
+        {{--<div class="container">--}}
+            {{--<div class="video-content">--}}
+                {{--<h2 class="video-title">Watch Campus Life Video Tour</h2>--}}
+                {{--<p class="video-sub-title">Vmply dummy text of the printing and typesetting industryorem--}}
+                    {{--<br>Ipsum industry's standard dum an unknowramble.</p>--}}
+                {{--<a class="play-btn popup-youtube wow bounceInUp" data-wow-duration="2s" data-wow-delay=".1s" href="http://www.youtube.com/watch?v=1iIZeIy7TqM"><i class="fa fa-play" aria-hidden="true"></i></a>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
     <!-- Video Area End Here -->
     <!-- Lecturers Area Start Here -->
     <div class="lecturers-area">
         <div class="container">
-            <h2 class="title-default-left">Our Skilled Lecturers</h2>
+            <h2 class="title-default-left">Our Skilled Alumni Members</h2>
         </div>
         <div class="container">
             <div class="rc-carousel" data-loop="true" data-items="4" data-margin="30" data-autoplay="false" data-autoplay-timeout="10000" data-smart-speed="2000" data-dots="false" data-nav="true" data-nav-speed="false" data-r-x-small="1" data-r-x-small-nav="true" data-r-x-small-dots="false" data-r-x-medium="2" data-r-x-medium-nav="true" data-r-x-medium-dots="false" data-r-small="3" data-r-small-nav="true" data-r-small-dots="false" data-r-medium="4" data-r-medium-nav="true" data-r-medium-dots="false" data-r-large="4" data-r-large-nav="true" data-r-large-dots="false">
+                @foreach($members as $member)
                 <div class="single-item">
                     <div class="lecturers1-item-wrapper">
                         <div class="lecturers-img-wrapper">
-                            <a href="#"><img class="img-responsive" src="/user/img/team/1.jpg" alt="team"></a>
+                            <a href="#"><img class="img-responsive" src="/uploads/{{$member->image}}" alt="team"></a>
                         </div>
                         <div class="lecturers-content-wrapper">
-                            <h3 class="item-title"><a href="#">Rosy Janner</a></h3>
-                            <span class="item-designation">Senior Finance Lecturer</span>
-                            <ul class="lecturers-social">
-                                <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            </ul>
+                            <h3 class="item-title"><a href="#">{{$member->name}}</a></h3>
+                            {{--<span class="item-designation">Senior Finance Lecturer</span>--}}
+                            {{--<ul class="lecturers-social">--}}
+                                {{--<li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>--}}
+                                {{--<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>--}}
+                                {{--<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>--}}
+                                {{--<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>--}}
+                            {{--</ul>--}}
                         </div>
                     </div>
                 </div>
-                <div class="single-item">
-                    <div class="lecturers1-item-wrapper">
-                        <div class="lecturers-img-wrapper">
-                            <a href="#"><img class="img-responsive" src="/user/img/team/2.jpg" alt="team"></a>
-                        </div>
-                        <div class="lecturers-content-wrapper">
-                            <h3 class="item-title"><a href="#">Mike Hussy</a></h3>
-                            <span class="item-designation">Senior Finance Lecturer</span>
-                            <ul class="lecturers-social">
-                                <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-item">
-                    <div class="lecturers1-item-wrapper">
-                        <div class="lecturers-img-wrapper">
-                            <a href="#"><img class="img-responsive" src="/user/img/team/3.jpg" alt="team"></a>
-                        </div>
-                        <div class="lecturers-content-wrapper">
-                            <h3 class="item-title"><a href="#">Daziy Millar</a></h3>
-                            <span class="item-designation">Senior Finance Lecturer</span>
-                            <ul class="lecturers-social">
-                                <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-item">
-                    <div class="lecturers1-item-wrapper">
-                        <div class="lecturers-img-wrapper">
-                            <a href="#"><img class="img-responsive" src="/user/img/team/4.jpg" alt="team"></a>
-                        </div>
-                        <div class="lecturers-content-wrapper">
-                            <h3 class="item-title"><a href="#">Kazi Fahim</a></h3>
-                            <span class="item-designation">Senior Finance Lecturer</span>
-                            <ul class="lecturers-social">
-                                <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-item">
-                    <div class="lecturers1-item-wrapper">
-                        <div class="lecturers-img-wrapper">
-                            <a href="#"><img class="img-responsive" src="/user/img/team/1.jpg" alt="team"></a>
-                        </div>
-                        <div class="lecturers-content-wrapper">
-                            <h3 class="item-title"><a href="#">Rosy Janner</a></h3>
-                            <span class="item-designation">Senior Finance Lecturer</span>
-                            <ul class="lecturers-social">
-                                <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-item">
-                    <div class="lecturers1-item-wrapper">
-                        <div class="lecturers-img-wrapper">
-                            <a href="#"><img class="img-responsive" src="/user/img/team/2.jpg" alt="team"></a>
-                        </div>
-                        <div class="lecturers-content-wrapper">
-                            <h3 class="item-title"><a href="#">Mike Hussy</a></h3>
-                            <span class="item-designation">Senior Finance Lecturer</span>
-                            <ul class="lecturers-social">
-                                <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
@@ -249,6 +166,9 @@
     <!-- Students Join 1 Area End Here -->
     <!-- Brand Area Start Here -->
     <div class="brand-area">
+        <div class="container">
+            <h2 class="title-default-left">Our Partners</h2>
+        </div>
         <div class="container">
             <div class="rc-carousel" data-loop="true" data-items="4" data-margin="30" data-autoplay="true" data-autoplay-timeout="5000" data-smart-speed="2000" data-dots="false" data-nav="false" data-nav-speed="false" data-r-x-small="2" data-r-x-small-nav="false" data-r-x-small-dots="false" data-r-x-medium="3" data-r-x-medium-nav="false" data-r-x-medium-dots="false" data-r-small="4" data-r-small-nav="false" data-r-small-dots="false" data-r-medium="4" data-r-medium-nav="false" data-r-medium-dots="false" data-r-large="4" data-r-large-nav="false" data-r-large-dots="false">
                 @foreach($partners as $partner)

@@ -68,87 +68,33 @@
                         <div class="col-lg-8 col-md-8 col-sm-9">
                             <nav id="desktop-nav">
                                 <ul>
-                                    <li class="active"><a href="#">Home</a>
+                                    <li class="active"><a href="#">About JUAA</a>
                                         <ul>
-                                            <li class="active"><a href="index.html">Home 1</a></li>
-                                            <li><a href="index2.html">Home 2</a></li>
-                                            <li><a href="index3.html">Home 3</a></li>
-                                            <li><a href="index4.html">Home 4</a></li>
+                                            <li><a href="{{route('single.page', 'about-juaa-alumni-association')}}">About</a></li>
+                                            <li><a href="{{route('single.page', 'terms-and-conditions')}}">Terms and Conditions</a></li>
+                                            <li><a href="{{route('single.page', 'service')}}">Services</a></li>
+                                            <li><a href="{{route('single.page', 'survey-on-job-market')}}">Survey on Job Market</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Pages</a>
-                                        <ul class="mega-menu-area">
-                                            <li>
-                                                <a href="about1.html">About 1</a>
-                                                <a href="about2.html">About 2</a>
-                                                <a href="about3.html">About 3</a>
-                                                <a href="about4.html">About 4</a>
-                                            </li>
-                                            <li>
-                                                <a href="lecturers1.html">lecturers 1</a>
-                                                <a href="lecturers2.html">lecturers 2</a>
-                                                <a href="single-lecturers.html">lecturers Details</a>
-                                                <a href="pricing1.html">Pricing Plan 1</a>
-                                            </li>
-                                            <li>
-                                                <a href="pricing2.html">Pricing Plan 2</a>
-                                                <a href="shop1.html">Shop 1</a>
-                                                <a href="shop2.html">Shop 2</a>
-                                                <a href="single-shop.html">Shop Details</a>
-                                            </li>
-                                            <li>
-                                                <a href="account.html">Account</a>
-                                                <a href="registration.html">Registration</a>
-                                                <a href="faq.html">Faq</a>
-                                                <a href="404.html">404 Error</a>
-                                            </li>
+                                    <li><a href="#">Members</a>
+                                        <ul>
+                                            <li><a href="{{route('single.page', 'types-of-membership')}}">Types of Membership</a></li>
+                                            <li><a href="{{route('single.page', 'registration-fee')}}">Registration Fee</a></li>
+                                            <li><a href="{{route('single.page', 'rules-inclusions-of-member')}}">Rules Inclusions of Member</a></li>
+                                            <li><a href="{{route('single.page', 'members-rights-and-benifits')}}">Rights and Benifits</a></li>
+                                            <li><a href="{{route('single.page', 'expulsion')}}">Expulsion</a></li>
+                                            <li><a href="{{route('single.page', 'reinstatement-of-membership')}}">Reinstatement</a></li>
+                                            <li><a href="{{route('single.page', 'rules-of-inclusion-of-member')}}">Inclusion Of a Member</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Courses</a>
+                                    <li><a href="#">NetWork Directory</a>
                                         <ul>
-                                            <li><a href="courses1.html">Courses 1</a></li>
-                                            <li><a href="courses2.html">Courses 2</a></li>
-                                            <li><a href="courses3.html">Courses 3</a></li>
-                                            <li><a href="single-courses1.html">Course Details 1</a></li>
-                                            <li><a href="single-courses2.html">Course Details 2</a></li>
-                                            <li><a href="single-courses3.html">Course Details 3</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Research</a>
-                                        <ul>
-                                            <li><a href="research1.html">Research 1</a></li>
-                                            <li><a href="research2.html">Research 2</a></li>
-                                            <li><a href="research3.html">Research 3</a></li>
-                                            <li><a href="single-research.html">Research Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">News</a>
-                                        <ul>
-                                            <li class="has-child-menu"><a href="#">News</a>
-                                                <ul class="thired-level">
-                                                    <li><a href="news1.html">News 1</a></li>
-                                                    <li><a href="news2.html">News 2</a></li>
-                                                    <li><a href="single-news.html">News Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="has-child-menu"><a href="#">Event</a>
-                                                <ul class="thired-level">
-                                                    <li><a href="event.html">Event</a></li>
-                                                    <li><a href="single-event.html">Event Details</a></li>
-                                                </ul>
-                                            </li>
+                                            <li><a href="{{route('single.page', 'job-tracking-career')}}">Job Network Directory</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">Gallery</a>
                                         <ul>
-                                            <li><a href="gallery1.html">Gallery 1</a></li>
-                                            <li><a href="gallery2.html">Gallery 2</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Contact</a>
-                                        <ul>
-                                            <li><a href="contact1.html">Contact 1</a></li>
-                                            <li><a href="contact2.html">Contact 2</a></li>
+                                            <li><a href="{{route('gallery.photo')}}">Photo Gallery</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -156,7 +102,7 @@
                         </div>
                         <div class="col-lg-2 col-md-2 hidden-sm">
                             <div class="apply-btn-area">
-                                <a href="#" class="apply-now-btn">Apply Now</a>
+                                <a href="{{route('member.create')}}" class="apply-now-btn">Apply Now</a>
                             </div>
                         </div>
                     </div>
@@ -171,77 +117,33 @@
                         <div class="mobile-menu">
                             <nav id="dropdown">
                                 <ul>
-                                    <li><a href="#">Home</a>
+                                    <li class="active"><a href="#">About JUAA</a>
                                         <ul>
-                                            <li><a href="index.html">Home 1</a></li>
-                                            <li><a href="index2.html">Home 2</a></li>
-                                            <li><a href="index3.html">Home 3</a></li>
-                                            <li><a href="index4.html">Home 4</a></li>
+                                            <li><a href="{{route('single.page', 'about-juaa-alumni-association')}}">About</a></li>
+                                            <li><a href="{{route('single.page', 'terms-and-conditions')}}">Terms and Conditions</a></li>
+                                            <li><a href="{{route('single.page', 'service')}}">Services</a></li>
+                                            <li><a href="{{route('single.page', 'survey-on-job-market')}}">Survey on Job Market</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Pages</a>
+                                    <li><a href="#">Members</a>
                                         <ul>
-                                            <li><a href="about1.html">About 1</a></li>
-                                            <li><a href="about2.html">About 2</a></li>
-                                            <li><a href="about3.html">About 3</a></li>
-                                            <li><a href="about4.html">About 4</a></li>
-                                            <li><a href="lecturers1.html">lecturers 1</a></li>
-                                            <li><a href="lecturers2.html">lecturers 2</a></li>
-                                            <li><a href="single-lecturers.html">lecturers Details</a></li>
-                                            <li><a href="pricing1.html">Pricing Plan 1</a></li>
-                                            <li><a href="pricing2.html">Pricing Plan 2</a></li>
-                                            <li><a href="shop1.html">Shop 1</a></li>
-                                            <li><a href="shop2.html">Shop 2</a></li>
-                                            <li><a href="single-shop.html">Shop Details</a></li>
-                                            <li><a href="faq.html">Faq</a></li>
-                                            <li><a href="404.html">404 Error</a></li>
+                                            <li><a href="{{route('single.page', 'types-of-membership')}}">Types of Membership</a></li>
+                                            <li><a href="{{route('single.page', 'registration-fee')}}">Registration Fee</a></li>
+                                            <li><a href="{{route('single.page', 'rules-inclusions-of-member')}}">Rules Inclusions of Member</a></li>
+                                            <li><a href="{{route('single.page', 'members-rights-and-benifits')}}">Rights and Benifits</a></li>
+                                            <li><a href="{{route('single.page', 'expulsion')}}">Expulsion</a></li>
+                                            <li><a href="{{route('single.page', 'reinstatement-of-membership')}}">Reinstatement</a></li>
+                                            <li><a href="{{route('single.page', 'rules-of-inclusion-of-member')}}">Inclusion Of a Member</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Courses</a>
+                                    <li><a href="#">NetWork Directory</a>
                                         <ul>
-                                            <li><a href="courses1.html">Courses 1</a></li>
-                                            <li><a href="courses2.html">Courses 2</a></li>
-                                            <li><a href="courses3.html">Courses 3</a></li>
-                                            <li><a href="single-courses1.html">Course Details 1</a></li>
-                                            <li><a href="single-courses2.html">Course Details 2</a></li>
-                                            <li><a href="single-courses3.html">Course Details 3</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Research</a>
-                                        <ul>
-                                            <li><a href="research1.html">Research 1</a></li>
-                                            <li><a href="research2.html">Research 2</a></li>
-                                            <li><a href="research3.html">Research 3</a></li>
-                                            <li><a href="single-research.html">Research Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">News</a>
-                                        <ul>
-                                            <li class="has-child-menu"><a href="#">News</a>
-                                                <ul class="thired-level">
-                                                    <li><a href="news1.html">News 1</a></li>
-                                                    <li><a href="news2.html">News 2</a></li>
-                                                    <li><a href="single-news.html">News Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="has-child-menu"><a href="#">Event</a>
-                                                <ul class="thired-level">
-                                                    <li><a href="event.html">Event</a></li>
-                                                    <li><a href="single-event.html">Event Details</a></li>
-                                                </ul>
-                                            </li>
+                                            <li><a href="{{route('single.page', 'job-tracking-career')}}">Job Network Directory</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">Gallery</a>
                                         <ul>
-                                            <li><a href="gallery1.html">Gallery 1</a></li>
-                                            <li><a href="gallery2.html">Gallery 2</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Contact</a>
-                                        <ul>
-                                            <li><a href="contact1.html">Contact 1</a></li>
-                                            <li><a href="contact2.html">Contact 2</a></li>
+                                            <li><a href="{{route('gallery.photo')}}">Photo Gallery</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -263,7 +165,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                        <p>&copy; 2017 Academics All Rights Reserved. &nbsp; Designed by<a target="_blank" href="http://radiustheme.com/"> RadiusTheme</a></p>
+                        <p>&copy; 2019 JU Alumni Association All Rights Reserved. </p>
                     </div>
 
                 </div>

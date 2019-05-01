@@ -14,7 +14,14 @@
                     <label class="control-label">Set Gallery</label>
                     <select id="gallery_id" multiple name="gallery_id[]" id="" class="form-control">
                         @foreach($galleries as $gallery)
-                            <option value="{{$gallery->id}}">{{$gallery->name}}</option>
+                            <option
+                                    @foreach($image->galleries as $g)
+                                        @if($g->id==$gallery->id)
+                                            selected
+                                            @break
+                                        @endif
+                                    @endforeach
+                                    value="{{$gallery->id}}">{{$gallery->name}}</option>
                         @endforeach
                     </select>
                 </div>

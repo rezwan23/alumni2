@@ -18,7 +18,7 @@
                                 <label class="control-label">Slider Image</label>
                                 <input class="form-control" type="file" name="image"  onchange="readURL(this);">
                                 {!!$errors->first('image', '<div class="text-danger">:message</div>')!!}
-                                <img id="blah" style="margin-top:20px;" src="https://via.placeholder.com/1350x472" class="img-fluid" alt="">
+                                <img id="blah" style="margin-top:20px;" src="https://via.placeholder.com/800X725" class="img-fluid" alt="">
                             </div>
                         </div>
                     </div>
