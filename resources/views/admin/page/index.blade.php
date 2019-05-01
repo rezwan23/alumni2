@@ -28,11 +28,11 @@
                             </td>
                             <td>
                                 <a href="{{route('page.edit', $page)}}" class="btn btn-primary btn-sm float-left">Edit</a>
-                                <form onsubmit="return confirm('Are you sure?')" style="float:left;margin-left: 4px" action="{{route('page.destroy', $page)}}" method="post">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button type="submit" class="btn btn-warning btn-sm">Delete</button>
-                                </form>
+                                {{--<form onsubmit="return confirm('Are you sure?')" style="float:left;margin-left: 4px" action="{{route('page.destroy', $page)}}" method="post">--}}
+                                    {{--@csrf--}}
+                                    {{--@method('DELETE')--}}
+                                    {{--<button type="submit" class="btn btn-warning btn-sm">Delete</button>--}}
+                                {{--</form>--}}
                             </td>
                         </tr>
                     @endforeach

@@ -30,7 +30,7 @@
                     <div class="tile-body">
                         <div class="form-group">
                             <label class="control-label">Title</label>
-                            <input class="form-control" type="text" name="title" value="{{$page->title}}" placeholder="Enter Page Title">
+                            <input readonly class="form-control" type="text" name="title" value="{{$page->title}}" placeholder="Enter Page Title">
                         </div>
 
                         <div class="form-group">
