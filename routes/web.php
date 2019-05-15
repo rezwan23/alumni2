@@ -37,4 +37,13 @@ Route::group(['middleware'=>'auth', 'prefix'=>'admin'], function(){
     Route::resource('image', 'GalleryImagesController');
     Route::get('/image/add-to-gallery/{image}', 'GalleryImagesController@addToGallery')->name('gallery.add');
     Route::post('/image/add-to-gallery/{image}', 'GalleryImagesController@setGallery')->name('set.gallery');
+    Route::get('/sms/smart', 'SMSConfigController@showConfigForm')->name('sms.config');
+    Route::post('/sms/smart', 'SMSConfigController@saveConfig')->name('sms.config');
+    Route::get('sms/new', 'SMSConfigController@newSms')->name('sms.new');
+    Route::post('sms/new', 'SMSConfigController@newSmsSend')->name('sms.new');
+    Route::get('sms/group', 'SMSConfigController@groupSms')->name('sms.group');
+    Route::post('sms/group', 'SMSConfigController@groupSmsSend');
+    Route::get('sms/index', 'SMSConfigController@index')->name('sms.index');
+    Route::get('sms/group/create', 'SMSConfigController@createGroup')->name('sms.group.create');
+    Route::post('sms/group/create', 'SMSConfigController@storeGroup');
 });
